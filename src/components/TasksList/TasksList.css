@@ -1,0 +1,45 @@
+.tasks-list {
+  position: relative;
+  width: 100%;
+  height: 85%;
+  max-height: 85%;
+  min-height: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0,0,0,.1);
+  display: flex;
+  flex-flow: column nowrap;
+  place-content: start;
+  place-items: center;
+  gap: .5em;
+  padding: 1em;
+  overflow: scroll;
+  transition: all .5s ease;
+}
+
+.empty-list-message {
+  position: absolute;
+  top: 45%;
+  color:  #aaa;
+}
+
+@media (max-width: 359px){
+  .tasks-list {
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 0;
+    height: 70%;
+  }
+}
+
+@media (max-width: 460px){
+  .tasks-list{
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+@media (min-width: 1080px){
+  .tasks-list {
+    max-height: 100%;
+    height: 100%;
+  }
+}

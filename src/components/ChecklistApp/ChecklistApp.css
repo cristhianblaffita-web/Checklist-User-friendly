@@ -1,0 +1,31 @@
+.checklist-app-container {
+  width: 90vw;
+  height: 90vh;
+  max-height: 90vh;
+  display: flex;
+  flex-flow: column nowrap;
+  place-content: center;
+  place-items: center;
+  gap: .5em;
+}
+
+@media (max-width: 359px) {
+  .checklist-app-container{
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    gap: 0;
+  }
+}
+
+@media (max-width: 460px){
+  .checklist-app-container {
+    gap: 0;
+  }
+}
+
+@media (min-width: 1080px){
+  .checklist-app-container {
+    flex-flow: row nowrap;
+  }
+}
