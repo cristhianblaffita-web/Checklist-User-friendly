@@ -1,29 +1,33 @@
 import React, {useState}  from "react"
 import "./TasksForm.css"
 
+/*
+The Task Form component is the formulary that serves as User Interface for adding any task into the Tasklist component. It needs a function for adding one task at a time that might be passed as a prop ('addFunc')
+*/
+
 const TasksForm = ({addFunc}) => {
-  const [taskInputVal, setTaskInputVal] = useState("")
+  const [taskInputVal, setTaskInputVal] = useState("") // Hook that store the value of the formulary input
   
-  const [trackId, setTrackId] = useState(0)
+  const [trackId, setTrackId] = useState(0) // Hook that manage the ID of each task or element
   
-  const handleInputVal = (event) => {
-    setTaskInputVal(event.target.value)
+  const handleInputVal = (event) => { // This function perform the updating of the value of the formulary input
+    setTaskInputVal(event.target.value) // Updating the value of the input
   }
   
-  const handleAddTask = (e) => {
-    e.preventDefault()
-    if (taskInputVal.trim().length > 0){
+  const handleAddTask = (e) => { // This function handle the whole workflow to adding a new task element
+    e.preventDefault() // Avoiding a website page unecessary
+    if (taskInputVal.trim().length > 0){ // Avoiding any empty task
 
-      setTrackId((trackId) => trackId + 1)
+      setTrackId((trackId) => trackId + 1) // Making a new ID for the new task
     
-      let newItem = ({
-        id: trackId,
-        state: false,
-        content: taskInputVal
+      let newItem = ({  // This object store the fundamental information about the task element
+        id: trackId, // Uniqe ID of the task element
+        state: false, // State: checked(true) or pending(false)
+        content: taskInputVal // Inner content of the task element
       })
       
-      addFunc(newItem)
-      setTaskInputVal("")
+      addFunc(newItem) // Calling the function passed as prop. These fuction is who perform the real procces of adding a task element into the tasklist
+      setTaskInputVal("") // Reseating the value of the input 
     }
 }
   
