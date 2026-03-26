@@ -133,7 +133,7 @@
   border: 0;
   border-radius: 5px;
   outline: none;
-  background: url("icons/remove-inactive.svg");
+  background: url("/icons/remove-inactive.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -141,7 +141,7 @@
 }
 
 .remove-task-btn:hover {
-  background: url("icons/remove-active.svg");
+  background: url("/icons/remove-active.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -150,7 +150,7 @@
 
 .remove-task-btn:focus {
   transform: scale(1.1);
-    background: url("icons/remove-active.svg");
+    background: url("/icons/remove-active.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;

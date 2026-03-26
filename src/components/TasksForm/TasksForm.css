@@ -55,7 +55,7 @@
 .add-task-icon {
   width: 20px;
   height: 40%;
-  background: url("icons/add.png");
+  background: url("/icons/add.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
