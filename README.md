@@ -6,7 +6,7 @@ A simple web application, fast and intuitive for schedule daily tasks in a check
 
 ## 🚀 Demo
 
-https://checklist-user-friendly-9v92cqnn7.vercel.app/
+https://checklist-user-friendly-ol2inpy7d.vercel.app
 
 ---
 
